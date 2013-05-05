@@ -1,4 +1,4 @@
-var Firebase = require("./firebase-node.js");
+var Firebase = require("firebase");
 var newWorkPeriod = 700;
 var workItems = new Firebase("https://workqueue.firebaseio-demo.com/");
 
