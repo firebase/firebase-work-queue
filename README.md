@@ -16,3 +16,7 @@ To add new elements to the work queue, start the generator, like this:
     node generator.js
 
 You can start as many workers or generators as you like. The WorkQueue uses transactions to ensure that each job is only given to one worker.
+
+License
+-------
+[MIT](http://firebase.mit-license.org).

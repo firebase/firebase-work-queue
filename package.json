@@ -1,0 +1,23 @@
+{
+  "name": "firebase-work-queue",
+  "version": "0.1.0",
+  "description": "Work queue for Firebase.",
+  "main": "workqueue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Firebase",
+    "queue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firebase/firebase-node.git"
+  },
+  "author": "Firebase",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "firebase": "~0.5.3"
+  }
+}

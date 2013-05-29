@@ -1,5 +1,5 @@
 var Firebase = require("firebase");
-var WorkQueue = require("./workqueue.js");
+var WorkQueue = require("../");
 
 var itemsRef = new Firebase("https://workqueue.firebaseio-demo.com/");
 
