@@ -4,12 +4,12 @@ firebase-work-queue - A Simple Firebase Queue
 Usage
 -----
 
-Install using npm:
+Install both `firebase` and `firebase-work-queue` using npm:
 
     npm install firebase
     npm install firebase-work-queue
 
-You can generate a job by pusing data to a Firebase list:
+You can generate a job by pushing data to a Firebase list:
 
 ```
 var Firebase = require("firebase");
@@ -29,16 +29,14 @@ var queue = new WorkQueue(itemsRef, function(job, done) () {
 });
 ```
 
-You can start as many workers or generators as you like.
+The `done` callback notifies the queue that it is ready for a new job.
+You can start as many workers or generators as you like and each job will be
+processed just once.
 
 Example
 -------
 
-The `examples/` folder illustrates processing data using Firebase as a queuing system.
-
-To run, first you'll need to install the Firebase node package:
-    
-    npm install firebase
+The `examples` contains a full example of processing data using Firebase as a queuing system.
 
 To process elements in the work queue, start a worker like this:
 
