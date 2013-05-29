@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/firebase/firebase-node.git"
+    "url": "https://github.com/firebase/firebase-work-queue.git"
   },
   "author": "Firebase",
   "license": "MIT",
