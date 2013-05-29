@@ -36,7 +36,7 @@ processed just once.
 Example
 -------
 
-The `examples` contains a full example of processing data using Firebase as a queuing system.
+The `examples` folder contains a full example of processing data using Firebase as a queuing system.
 
 To process elements in the work queue, start a worker like this:
 
