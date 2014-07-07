@@ -1,6 +1,6 @@
 {
   "name": "firebase-work-queue",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Work queue for Firebase.",
   "main": "workqueue.js",
   "scripts": {
@@ -18,6 +18,6 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "firebase": "~0.5.3"
+    "firebase": "^1.0.17"
   }
 }

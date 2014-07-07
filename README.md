@@ -1,13 +1,15 @@
 firebase-work-queue - A Simple Firebase Queue
 =============================================
 
+NPM Version of https://github.com/firebase/firebase-work-queue.
+
 Usage
 -----
 
-Install both `firebase` and `firebase-work-queue` using npm:
-
-    npm install firebase
-    npm install firebase-work-queue
+```
+npm install firebase
+npm install firebase-work-queue
+```
 
 You can generate a job by pushing data to a Firebase list:
 
