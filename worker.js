@@ -10,9 +10,19 @@ var workCallback = function(data, whenFinished) {
 
   //This demo task simply pauses for the amount of time specified in data.time
   setTimeout(function() {
-  	console.log("Finished Processing: " + data.number + " for " + data.time + " milliseconds");
-  	whenFinished();
+    console.log("Finished Processing: " + data.number + " for " + data.time + " milliseconds");
+    whenFinished();
   }, data.time);
 }
 
-new WorkQueue(itemsRef, workCallback);
+var workQueue = new WorkQueue(itemsRef, workCallback);
+
+process.once('SIGTERM', function() {
+  console.log('SIGTERM received, gracefully shutting down.');
+  workQueue.shutdown();
+});
+
+process.once('SIGINT', function() {
+  console.log('SIGINT received, gracefully shutting down.');
+  workQueue.shutdown();
+});
