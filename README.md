@@ -1,5 +1,7 @@
-firebase-work-queue - A Simple Firebase Queue
-===================
+firebase-work-queue-advanced
+============================
+
+This repository is a fork of [firebase-work-queue - A Simple Firebase Queue](https://github.com/firebase/firebase-work-queue). It adds some additional features including createdAt timestamps, event queue data persistance in the event of a worker crash, the ability to add an error callback to the worker process, and keeping track of queue item statuses.
 
 This is an example of processing data using Firebase as a queuing system.
 
